@@ -1,0 +1,28 @@
+.hero__btn { 
+    min-width: 216px;
+    min-height: 50px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: var(--main-title-color);
+    background: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    border: none;
+.hero__btn:hover 
+.hero__btn:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+}

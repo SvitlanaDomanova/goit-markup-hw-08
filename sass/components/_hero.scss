@@ -1,0 +1,27 @@
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    margin-right: 237px;
+    margin-left: 237px;
+    margin-bottom: 30px;
+}
+.hero {
+    padding-top: 200px;
+    padding-bottom: 94px;
+    background: var(--hero-background);
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 602px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: 
+    url('../images/img_general.jpg');
+    background-position: center;
+    background: rgb(47,48,58);
+    background-image: linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/Img_general.jpg);
+}

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Студія</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+        rel="stylesheet">
+        <!------- Modern normalize ------>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+       
+</head>
+<body>
+    <header class="general__container-header header">
+        <div class="container">
+                <div class="header__container"> 
+                    <div class="header__logo"> 
+                        <a class="logo" href="">Web<span class="logo__img">Studio</span></a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"> 
+                                <a href="./index.html" class="nav__link nav__link--current">Студія</a></li>
+                            <li class="nav__item">
+                                <a href="./portfolio.html"class="nav__link">Портфоліо</a></li>
+                            <li class="nav__item">
+                                <a href=""class="nav__link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                        <div class="header__group"> 
+                            <a href="mailto:info@devstudio.com" class="header__mail">
+                                <svg class="mail__img" width="16" height="12">
+                                    <use href="./images/sssymbol-defs.svg#icon-envelopehover"><use/>
+                                </svg>
+                                info@devstudio.com</a>
+                              <a href="tel:+380961111111" class="header__contact">
+                                <svg class="contact__img" width="10" height="16">
+                                    <use href="./images/sssymbol-defs.svg#icon-smartphone"><use/>
+                                  </svg>
+                                  +38 096 111 11 11</a>
+                        </div>
+                </div>
+                <div>
+                    <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                  >
+                    <svg
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+            </div>
+        </div>
+    </header>
+    <main>
+<section class="hero">
+        <div class="container">
+            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <div>
+                    <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
+        </div>
+    </div>
+    </section> 
+    <section class="features__container">
+        <div class="container">
+            <h2 hidden>Особливості</h2>
+                    <ul class="features__list" >
+                    <li class="list features__item">
+                        <ul class="list">
+                            <li class="features__item--fon">
+                        <svg class="features__img" width="70" height="70">
+                            <use href="./images/sssymbol-defs.svg#icon-antenna"><use/>
+                          </svg>
+                        </li>
+                    </ul>
+                            <h3 class="features__name">Увага до деталей</h3>
+                            <p class="features__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        </li>
+                    <li class="list features__item">
+                        <ul class="list">
+                            <li class="features__item--fon">
+                        <svg class="features__img" width="70" height="70">
+                            <use href="./images/sssymbol-defs.svg#icon-clock"><use/>
+                          </svg>
+                        </li>
+                    </ul>
+                        <h3 class="features__name">Пунктуальність</h3>
+                        <p class="features__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li>
+                    <li class="list features__item">
+                        <ul class="list">
+                            <li class="features__item--fon">
+                        <svg class="features__img" width="70" height="70">
+                            <use href="./images/sssymbol-defs.svg#icon-diagram"><use/>
+                          </svg>
+                        </li>
+                        </ul>
+                        <h3 class="features__name">Планування</h3>
+                        <p class="features__description">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+                    <li class="list features__item">
+                        <ul class="list">
+                            <li class="features__item--fon">
+                        <svg class="features__img" width="70" height="70">
+                            <use href="./images/sssymbol-defs.svg#icon-astronaut"><use/>
+                          </svg>
+                        </li>
+                    </ul>
+                        <h3 class="features__name">Сучасні технології</h3>
+                        <p class="features__description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
+                </ul>
+              </div>    
+    </section>
+    <section class="work__container">
+        <div class="container">
+                <h2 class="work__title">Чим ми займаємося</h2>
+            <ul class="list work__list">
+                <li class="work__item">
+                   <div class="work__thumb">
+                    <img  src="./images/box_1.jpg" alt="Робочий процес" width="370" height="294">
+                    <div class="overlay__work"><p class="overlay__work--text">Десктопні додатки</p></div>
+                </div>
+                </li>
+                <li class="work__item">
+                    <div class="work__thumb">
+                    <img src="./images/box_2.jpg" alt="Робочий процес" width="370" height="294">
+                    <div class="overlay__work"><p class="overlay__work--text">Мобільні додатки</p></div>
+                </div>
+                </li>
+                <li class="work__item">
+                    <div class="work__thumb">
+                    <img src="./images/box_3.jpg" alt="Робочий процес" width="370" height="294">
+                    <div class="overlay__work"><p class="overlay__work--text">Дизайнерські рішення</p></div>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+<section class="team__section">
+    <div class="container">
+        <h2 class="team__title">Наша команда</h2>
+        <ul class="list team__list">
+            <li class="team__item">
+                <img src="./images/img_1.jpg" alt="Працівник" width="270" height="260">
+                <div class="team__group">
+                    <h3 class="team__name">Ігор Дем'яненко</h3>
+                    <p class="team__position">Product Designer</p>
+                    <ul class="list social__network">
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                            href="https://www.instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram icon"
+                            >
+                            <svg class="social__network-icon" width="20" height="20">
+                                <use href="./images/sssymbol-defs.svg#icon-instagram"><use/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__network-item">
+                        <a class="social__network-link"
+                            href="https://twitter.com/?lang=uk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Twitter icon"
+                            >
+                            <svg class="social__network-icon" width="20" height="20"> 
+                                <use href="./images/sssymbol-defs.svg#icon-twitter"><use/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__network-item">
+                        <a class="social__network-link"
+                            href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Catqc%20er%7C&placement=&creative=303881997266&keyword=atqc%20er&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-309614322922%26loc_physical_ms%3D9061016%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDVykRVFYwx1C5_49Tey_Y1slBAY74cSh2taEJXi-N8TJd7tq7RgyiRoCDEwQAvD_BwE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook icon"
+                            >
+                            <svg class="social__network-icon" width="20" height="20">
+                                <use href="./images/sssymbol-defs.svg#icon-facebook"><use/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__network-item">
+                    <a class="social__network-link"
+                            href="https://ua.linkedin.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Linkedin icon"
+                            >
+                            <svg class="social__network-icon" width="20" height="20">
+                                <use href="./images/sssymbol-defs.svg#icon-linkedin"><use/>
+                            </svg>
+                        </a>
+                     </li>
+                </ul>
+                </div>
+            </li>
+            <li class="team__item">
+                <img src="./images/img_2.jpg" alt="Працівник" width="270" height="260">
+                <div class="team__group">
+                    <h3 class="team__name">Ольга Рєпіна</h3>
+                    <p class="team__position">Frontend Developer</p>
+                    <ul class="list social__network">
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://www.instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-instagram"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://twitter.com/?lang=uk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Twitter icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20"> 
+                                    <use href="./images/sssymbol-defs.svg#icon-twitter"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Catqc%20er%7C&placement=&creative=303881997266&keyword=atqc%20er&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-309614322922%26loc_physical_ms%3D9061016%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDVykRVFYwx1C5_49Tey_Y1slBAY74cSh2taEJXi-N8TJd7tq7RgyiRoCDEwQAvD_BwE"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-facebook"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                        <a class="social__network-link"
+                                href="https://ua.linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Linkedin icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-linkedin"><use/>
+                                </svg>
+                            </a>
+                     </li>
+                </ul>
+                </div>
+            </li>
+            <li class="team__item">
+                <img src="./images/img_3.jpg" alt="Працівник" width="270" height="260">
+                    <div class="team__group">
+                        <h3 class="team__name">Микола Тарасов</h3>
+                        <p class="team__position">Marketing</p>
+                        <ul class="list social__network">
+                            <li class="social__network-item">
+                                <a class="social__network-link"
+                                href="https://www.instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-instagram"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://twitter.com/?lang=uk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Twitter icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20"> 
+                                    <use href="./images/sssymbol-defs.svg#icon-twitter"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Catqc%20er%7C&placement=&creative=303881997266&keyword=atqc%20er&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-309614322922%26loc_physical_ms%3D9061016%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDVykRVFYwx1C5_49Tey_Y1slBAY74cSh2taEJXi-N8TJd7tq7RgyiRoCDEwQAvD_BwE"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-facebook"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                        <a class="social__network-link"
+                                href="https://ua.linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Linkedin icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-linkedin"><use/>
+                                </svg>
+                            </a>
+                         </li>
+                    </ul>
+                    </div>
+            </li>
+            <li class="team__item">
+                <img src="./images/img_4.jpg" alt="Працівник" width="270" height="260">
+                <div class="team__group">
+                    <h3 class="team__name">Михайло Єрмаков</h3>
+                    <p class="team__position">UI Designer</p>
+                    <ul class="list social__network">
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://www.instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-instagram"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://twitter.com/?lang=uk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Twitter icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20"> 
+                                    <use href="./images/sssymbol-defs.svg#icon-twitter"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                            <a class="social__network-link"
+                                href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Catqc%20er%7C&placement=&creative=303881997266&keyword=atqc%20er&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-309614322922%26loc_physical_ms%3D9061016%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDVykRVFYwx1C5_49Tey_Y1slBAY74cSh2taEJXi-N8TJd7tq7RgyiRoCDEwQAvD_BwE"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-facebook"><use/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network-item">
+                        <a class="social__network-link"
+                                href="https://ua.linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Linkedin icon"
+                                >
+                                <svg class="social__network-icon" width="20" height="20">
+                                    <use href="./images/sssymbol-defs.svg#icon-linkedin"><use/>
+                                </svg>
+                            </a>
+                     </li>
+                    </ul>
+                </div>  
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="container customers__section">
+    <div>
+    <h2 class="customers__title">Постійні клієнти</h2>
+    <ul class="customers__list">
+        <li class="list">
+            <a class="customers__link" href="">
+            <svg class="social__network-icon" width="106" height="60">
+                <use href="./images/sssymbol-defs.svg#icon-Logo"><use/>
+            </svg>
+        </a>
+        </li>
+        <li class="list">
+            <a class="customers__link" href="">
+            <svg class="social__network-icon" width="106" height="60">
+                <use href="./images/sssymbol-defs.svg#icon-Logob"><use/>
+            </svg>
+        </a>
+        </li>
+        <li class="list">
+            <a class="customers__link" href="">
+            <svg class="social__network-icon" width="106" height="60">
+                <use href="./images/sssymbol-defs.svg#icon-Logoc"><use/>
+            </svg>
+        </a>
+        </li>
+        <li class="list">
+            <a class="customers__link" href="">
+            <svg class="social__network-icon" width="106" height="60">
+                <use href="./images/sssymbol-defs.svg#icon-Logoy"><use/>
+            </svg>
+        </a>
+        </li>
+        <li class="list">
+            <a class="customers__link" href="">
+            <svg class="social__network-icon" width="106" height="60">
+                <use href="./images/sssymbol-defs.svg#icon-Logod"><use/>
+            </svg>
+        </a>
+        </li>
+        <li class="list">
+            <a class="customers__link" href="">
+            <svg class="social__network-icon" width="106" height="60">
+                <use href="./images/sssymbol-defs.svg#icon-Logoe"><use/>
+            </svg>
+        </a>
+        </li>
+    </ul>
+</div>
+</section>
+    </main>
+        <footer class="footer footer__section">
+            <div class="container">
+            <div class="footer__group">
+                <div>
+                        <div class="footer__group-logo"> 
+                    <a href class="footer__logo">Web<span class="footer_-logo-part">Studio</span></a>
+                        </div>
+                    <address>
+                        <ul class="footer__group-adress">
+                            <li class="list footer__adress-item">
+                                    <a class="footer__adress-link list" href="https://goo.gl/maps/mPQvmjuRFqu8Kfpr9" target="_blank" 
+                                    rel="noopener noreferrer nofollow"
+                                    >м. Київ, пр-т Лесі Українки, 26</a>
+                            </li>
+                            <li class="list">
+                                    <a class="footer__mail-link footer__adress-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                                    <li class="list">
+                                        <a class="footer_header_tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li> 
+                        </ul>
+                    </address>
+                    </div>
+                        <div class="footer__socials__network">
+                            <p class="footer__socials__network-title">Приєднуйтесь</p>
+                                <ul class="list footer__socials__network-group">
+                                    <li class="social__network-item">
+                                        <a class="social_link_footer"
+                                            href="https://www.instagram.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Instagram icon"
+                                            >
+                                            <svg class="footer__socials__network-icon" width="20" height="20">
+                                                <use href="./images/sssymbol-defs.svg#icon-instagram"><use/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__network-item">
+                                        <a class="social_link_footer"
+                                            href="https://twitter.com/?lang=uk"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Twitter icon"
+                                            >
+                                            <svg class="footer__socials__network-icon" width="20" height="20"> 
+                                                <use href="./images/sssymbol-defs.svg#icon-twitter"><use/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__network-item">
+                                        <a class="social_link_footer"
+                                            href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Catqc%20er%7C&placement=&creative=303881997266&keyword=atqc%20er&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-309614322922%26loc_physical_ms%3D9061016%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDVykRVFYwx1C5_49Tey_Y1slBAY74cSh2taEJXi-N8TJd7tq7RgyiRoCDEwQAvD_BwE"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Facebook icon"
+                                            >
+                                            <svg class="footer__socials__network-icon" width="20" height="20">
+                                                <use href="./images/sssymbol-defs.svg#icon-facebook"><use/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__network-item">
+                                        <a class="social_link_footer"
+                                            href="https://ua.linkedin.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Linkedin icon"
+                                            >
+                                            <svg class="footer__socials__network-icon" width="20" height="20">
+                                                <use href="./images/sssymbol-defs.svg#icon-linkedin"><use/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                <div class="footer__subscription">
+                    <p class="footer__subscription-title">Підпишіться на розсилку</p>
+                    <div class="footer__subscription-group">
+                    <form  name="footer__subscription-form" autocomplete="on">
+                        <div>
+                            <label class="footer__subscription-label">
+                                <input class="footer__subscription-mail" 
+                                type="email" name="E-mail" 
+                                placeholder="E-mail">
+                        <button type="submit" class="footer__subscription-btn" data-modal-open>Підписатися
+                            <a class="footer__subscription-link">
+                                            <svg class="footer__subscription-icon" width="20" height="20">
+                                                <use href="./images/sssymbol-defs.svg#-iconicon-send"><use/>
+                                            </svg>
+                                        </a> 
+                        </button>
+                    </label>
+                       </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div> 
+        </footer>
+         <!-- Modal window -->
+       <div class="backdrop is-hidden" data-modal>
+        <div class="modal"><button class="modal-btn" data-modal-close>
+            <svg class="footer-icon" width="24" height="24">
+                <use href="./images/sssymbol-defs.svg#-iconclose-black-18dp-2-1"></use>
+            </svg>
+        </button>
+      <strong class="modal-label">Залиште свої дані, ми вам передзвонимо</strong>
+      <form class="modal-form" name="modal_form">
+        <div class="modal-form-group" role="group">
+            <label class="modal-form-label" for="user_name">Ім'я</label>
+            <div class="modal-form-wrapper">
+                <input class="modal-form-field" type="text" name="user_name" id="user_name">
+                <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/sssymbol-defs.svg#-iconperson-black-18dp-1"></use>
+                </svg>
+            </div>
+            <label class="modal-form-label" for="user_phone">Телефон</label>
+            <div class="modal-form-wrapper">
+                <input class="modal-form-field" type="tel" name="user_phone" id="user_phone">
+                <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/sssymbol-defs.svg#-iconphone-black-18dp-1"></use>
+                </svg>
+            </div>
+            <label class="modal-form-label" for="user_mail">Пошта</label>
+            <div class="modal-form-wrapper">
+                <input class="modal-form-field" type="text" name="user_mail" id="user_mail">
+                <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/sssymbol-defs.svg#-iconemail-black-18dp-1"></use>
+                </svg>
+            </div>
+            <label class="modal-form-label" for="user_message">Коментар</label>
+            <textarea 
+            class="modal-form-message" 
+            name="user_message" 
+            id="user_message" rows="6"
+            placeholder="Введіть текст"
+            ></textarea>
+        </div>
+        <div role="group" class="modal-form-agreement">
+            <input class="modal-form-checkbox" type="checkbox" id="user-agreement"/>
+            <label class="modal-form-agreement-desc" for="user-agreement">Погоджуюся з розсилкою та приймаю 
+                <a class="modal-form-agreement-link" href="">Умови договору</a>
+            </label>
+        </div>
+        <button class="modal-form-btn" type="submit">Відправити</button>
+      </form>
+    </div>
+       </div>
+       <body>
+        <!-- Mobile menu-->
+        <div class="container menu_phone_screen">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              possimus doloribus modi numquam quaerat reprehenderit, necessitatibus
+              consectetur corrupti recusandae consequatur ut dolor odio itaque iusto
+              beatae? Quaerat minima sint laborum ex, est eos quidem, quisquam,
+              magnam sed quos voluptatum. Pariatur veritatis quam neque aliquid quis
+              quod est deserunt tempora assumenda veniam modi, voluptatem temporibus
+              ab repellendus excepturi. Dolore architecto, sit molestias animi et
+              pariatur dolorem voluptatum nam laudantium veniam consectetur ratione
+              quod suscipit inventore dicta illum cum non. Fugit nobis recusandae
+              rerum! Recusandae ab maiores eveniet at laborum delectus iure. Nisi
+              commodi quam iusto, omnis quasi corporis incidunt perferendis, vel
+              voluptatem, rem eligendi! Ea pariatur voluptas odio consectetur non
+              blanditiis nam iure voluptate veniam cupiditate modi molestias quas
+              temporibus quo facilis, consequatur natus officiis sit accusamus
+              exercitationem placeat itaque. Placeat, non sed consequuntur quia modi
+              inventore a nemo recusandae officia, maxime accusamus eligendi id
+              mollitia quibusdam cumque? Cupiditate nam iusto praesentium
+              exercitationem doloremque provident, quidem, dolor vero totam dolores
+              veritatis fugiat. Ipsam omnis sapiente, voluptates consectetur earum
+              dolorum est enim natus aliquid aliquam reprehenderit mollitia tempore,
+              eius sunt, velit laudantium fugiat! Eaque tenetur voluptatum ipsa
+              voluptas harum tempora corporis. Corrupti cumque delectus aperiam
+              beatae et sequi at, assumenda odit minima!
+            </p>
+            <p>
+              Asperiores nesciunt aliquid dicta? Eaque similique iste et velit
+              tenetur pariatur veniam praesentium optio ducimus? Dicta doloribus,
+              quas magnam consectetur distinctio placeat numquam eius maiores ab
+              consequuntur facere dignissimos laboriosam itaque qui animi.
+              Exercitationem possimus est iusto id ab quod dolorem harum, commodi
+              distinctio voluptas eaque beatae consequuntur enim voluptatem alias
+              repellat architecto aperiam eius ullam fugit dolorum magnam fuga
+              vitae. Vel obcaecati rem, similique id necessitatibus sed, eius animi
+              hic iure provident fuga tempore odit ullam accusantium ad nobis
+              explicabo illum officia debitis natus facere! Facere sed placeat nihil
+              delectus ipsa quaerat dicta repellendus distinctio rem! Tenetur,
+              aperiam ea. Nulla corrupti laborum doloremque numquam dignissimos non
+              quam, quas, repellendus dolores maiores molestias dicta magnam!
+              Repudiandae quibusdam ducimus possimus ipsa consequuntur expedita,
+              excepturi sint, fuga temporibus pariatur eveniet sed nihil facere
+              dolor velit porro. Quidem voluptatem accusamus itaque numquam atque,
+              assumenda iusto hic inventore, quo, maxime illo explicabo ullam
+              doloremque neque voluptates necessitatibus nisi? Illo, praesentium
+              hic! Necessitatibus perferendis alias sunt quia vero at distinctio
+              harum deserunt, modi dolores numquam omnis doloremque nostrum, illo
+              reiciendis nemo officiis perspiciatis explicabo nobis possimus,
+              nesciunt molestiae rem? Magnam deserunt suscipit, dicta, veritatis sed
+              nisi iusto eveniet saepe corporis adipisci voluptates autem quasi
+              praesentium.
+            </p>
+            <p>
+              Id veritatis, suscipit sit sunt at tempora delectus? Itaque rerum ea,
+              vitae ullam reprehenderit modi. Deserunt blanditiis fugit accusamus,
+              dolore architecto assumenda sint aspernatur aut, error corrupti
+              deleniti voluptatibus sapiente alias autem repudiandae molestias
+              repellendus? Provident ratione laborum ab pariatur itaque odio facere
+              eius. Porro facilis commodi quaerat quis velit, esse sequi cum modi?
+              Sapiente laborum assumenda dolorem voluptates deserunt magnam sit, vel
+              non doloribus perferendis, ipsum quis eveniet. Consequuntur sapiente
+              obcaecati incidunt suscipit veritatis, eum officiis cum enim vel
+              quaerat laudantium corrupti, modi dignissimos facere quo praesentium,
+              exercitationem quae est delectus? Rem ipsam deleniti atque modi cum,
+              velit, autem maxime ullam expedita non adipisci. Quisquam, excepturi
+              culpa, quo praesentium minima ipsa inventore molestias possimus
+              commodi fugit voluptatibus repellendus in vitae nihil provident
+              temporibus. Sed pariatur perspiciatis assumenda. Excepturi vitae
+              temporibus ab, voluptates sapiente dicta! Quod, cumque sed dolor quae
+              obcaecati fugit doloribus placeat dolorum nulla tenetur odit eum
+              minima impedit ullam nemo vitae sunt? Porro pariatur facere deserunt
+              aperiam obcaecati libero, doloremque velit corporis ex commodi nemo
+              ratione, iusto minima animi perspiciatis beatae nulla natus, eveniet
+              tenetur corrupti architecto tempore? Aperiam vel nulla officiis
+              dignissimos repellendus perspiciatis provident, pariatur eligendi
+              itaque, beatae modi delectus iure deleniti? Iste, iusto? Quae.
+            </p>
+            <p>
+              Sint exercitationem expedita ut sed labore! Possimus molestiae
+              blanditiis quasi recusandae, quaerat temporibus sit numquam ut,
+              quisquam repudiandae asperiores repellendus dolor veritatis aperiam,
+              debitis dolorem consequuntur error deserunt id. Atque praesentium,
+              totam sequi debitis voluptates fugit eum deleniti hic provident nisi
+              eos perferendis qui libero soluta vero nostrum unde, magni fuga.
+              Inventore qui dolorem temporibus vel quas. Quam mollitia obcaecati
+              temporibus nulla non ad eos distinctio, minus quod voluptate?
+              Laudantium, alias amet quia nesciunt doloribus reprehenderit, ex
+              facilis iure, blanditiis nemo assumenda. Autem voluptatum ut facere.
+              Non harum a aliquam cumque maiores dicta aspernatur, eos, quia esse
+              quam facilis, eaque praesentium omnis quaerat molestiae tenetur optio.
+              Modi aperiam tenetur eligendi repellat expedita, pariatur repudiandae,
+              neque quasi molestiae enim dolor earum omnis eius delectus eveniet
+              ipsam rem beatae porro consectetur? Soluta maxime debitis quaerat
+              nulla laudantium, harum eaque earum dolores, quia aut similique
+              dolorum. Ex debitis veniam nostrum fuga odio sequi aliquam
+              exercitationem praesentium beatae nisi explicabo voluptatibus quis,
+              hic iusto corporis quas dolor dolorem adipisci? Iste porro sit
+              exercitationem assumenda obcaecati fuga tempore voluptatem, tenetur
+              mollitia harum non eaque. Sint, sapiente voluptatibus ipsum, eum,
+              possimus aliquam omnis provident iste excepturi eaque accusamus minima
+              ullam est minus amet ducimus veniam ea!
+            </p>
+            <p>
+              Numquam vitae incidunt ab fugit esse dolor quidem quibusdam iusto
+              suscipit aliquid dolore nihil, rem labore quisquam molestias cumque
+              temporibus dolorem inventore veritatis optio error tempora similique
+              officiis. Quos officia numquam ab, impedit veritatis ut obcaecati
+              fugit natus ipsam vel repellendus ratione! Vel iusto a doloribus
+              tempora sapiente! Ducimus vero, maxime animi modi nostrum, obcaecati
+              quo error cupiditate eos veritatis odio, nulla dolores est molestiae
+              atque dicta ex dolore ab dolor iste nam beatae. Eos harum tenetur
+              doloribus impedit ea ad quia cum laudantium. Animi harum quia neque
+              deleniti. Excepturi, quia eligendi temporibus laudantium dicta eos
+              quas necessitatibus nihil velit consequuntur libero cupiditate
+              nesciunt, explicabo quae minus tempora eum! Repellendus accusantium
+              aut assumenda odio porro voluptatibus rerum vero nam. Maiores
+              voluptatem mollitia accusantium placeat, quod quisquam animi nobis
+              vero et ullam omnis similique corporis quasi quam unde repudiandae
+              quaerat eligendi suscipit adipisci cum pariatur nemo. Provident ea
+              iusto et adipisci voluptatibus ratione laboriosam saepe harum ut
+              molestias nemo aliquid maiores necessitatibus culpa numquam asperiores
+              dignissimos eos qui perspiciatis beatae possimus, excepturi ipsum
+              placeat. Facilis, harum. Ullam veritatis rem explicabo nesciunt ea
+              odit, dicta porro quam consequatur commodi, vel voluptas illo
+              perferendis autem maiores dolorum quo. Reprehenderit veritatis
+              recusandae nobis sunt.
+            </p>
+          </div>
+          
+          
+          </div>
+        </main>
+    
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+    
+          <ul class="mobile-menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+          </ul>
+        </div>
+        <!-- Вся твоя розмітка, включно з розміткою модалки -->
+        <!-- Ставимо перед закриваючим тегом body -->
+        <script src="./js/modal.js"></script>
+        <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
+      </body>
+</html>

@@ -1,0 +1,106 @@
+.title_work {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    color: var(--hero-catalogue);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+}
+.btn_prtfl {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: navajowhite;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background: var(--secondary-button-color);
+    border-radius: 4px;
+    display: inline;
+    align-items: center;
+    cursor: pointer;
+    border-color: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    
+    &:hover, 
+    &:focus {
+    background: var(--button-color);
+    color: var(--main-title-color) 
+}
+}
+
+.link_btn_prtfl {
+    text-decoration: none; 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    display: block;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+}
+.container_work_card {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    display: block;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+}
+.container_work:hover .overlay_prtfl {
+    transform: translateY(0);
+}
+.about_work {
+    position: relative;
+    overflow: hidden;
+}
+.overlay_prtfl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 150, 243, 0.9);
+    backdrop-filter:blur (2px);
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--main-title-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28/18);
+    letter-spacing: 0.03em;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.essential {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.type_work {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    color: var(--secondary-title-color);
+}
+.title_work {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    &:hover, 
+    &:focus {
+     color: var(--button-color);
+}
+}

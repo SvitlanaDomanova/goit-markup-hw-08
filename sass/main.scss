@@ -1,0 +1,26 @@
+//utis style
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+//base style
+@import './base/base';
+@import './base/reset';
+
+//component style
+@import './components/component';
+@import './components/container';
+@import './components/sections';
+@import './components/btn';
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/features';
+@import './components/teams';
+@import './components/customers';
+@import './components/footer';
+@import './components/socialnetwork';
+@import './components/modal';
+@import './components/portfolio';
+@import './components/hero';
+@import './components/work';
+@import './components/typography';
