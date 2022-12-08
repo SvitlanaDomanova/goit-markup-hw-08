@@ -1,15 +1,7 @@
 .work {
-   display: none;
-    @media screen and (min-width:768px){
-        padding-top: 94px;
-        padding-bottom: 94px;
- }
- @media screen and (min-width:1200px){
     padding-top: 94px;
     padding-bottom: 94px;
- }
- }
-
+}
 .work__thumb {
     position: relative;
     overflow: hidden;

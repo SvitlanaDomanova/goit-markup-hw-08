@@ -1,18 +1,20 @@
 .logo {
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 24px;
-        line-height: calc(28/24);
-        letter-spacing: 0.03em;
-        color: var(--button-color);
-        text-decoration: none;
-    @media screen and (min-width:768px){
+    font-size: 24px;
+    line-height: calc(28/24);
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--button-color);
+    text-decoration: none;
+    //tablet screen
+    @media screen and (min-width: 768px) {
         font-size: 24px;
         line-height: calc(28/24);
     }
-    @media screen and (min-width:1200px){
+    //desctop screen
+    @media screen and (min-width: 1200px) {
         font-size: 26px;
-        line-height: calc(31/26);
+    line-height: calc(31/26);
     }
 }
 .logo__img {
@@ -21,17 +23,16 @@
     align-items: center;
 }
 .header__logo {
+    margin-right: 276px;
     display: flex;
     align-items: center;
-    margin-right: 276px;
-    margin-left: 0; 
-    @media screen and (min-width:768px){ 
-        margin-right: 87px;
-        margin-left: 0; 
-    }
-    @media screen and (min-width:1200px){
-    margin-right: 93px;
     margin-left: 0;
-    
-}
-}
+        //tablet screen
+        @media screen and (min-width: 768px) {
+            margin-right: 87px;
+        }
+        //desctop screen
+        @media screen and (min-width: 1200px) {
+            margin-right: 92px;
+        }
+    }
