@@ -7,9 +7,6 @@ $breakpoints: (
 .container {
     padding-right: 15px;
     padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
     outline: 2px solid tomato;
     outline-offset: -2px;
     //phone screen
@@ -19,19 +16,29 @@ $breakpoints: (
     //tablet screen
     @media screen and (min-width: 768px) {
         width: 768px;
+        margin-left: auto;
+        margin-right: auto;
     }
     //desctop screen
     @media screen and (min-width: 1200px) {
         width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .features__container {
-    padding-top: 94px;
-    padding-bottom: 0;
-}
-.work__container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    //tablet screen
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    //desctop screen
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .section_container {
     padding-top: 94px;
@@ -47,7 +54,7 @@ $breakpoints: (
     min-width: 231px;
     min-height: 81px;
     display: flex;
-
+    flex-wrap: wrap;
 }
 .logo_container_footer {
     padding-left: 0;
@@ -66,7 +73,18 @@ $breakpoints: (
     
 }
 .prtfl_container {
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    //desctop screen
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    }
 }
 .prtfl_container_work {
     padding-top: 20px;
@@ -105,6 +123,23 @@ $breakpoints: (
     padding-bottom: 94px;
 }
 .work__container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        //phone screen
+        @media screen and (min-width: 480px) {
+            display: none;
+        }
+        //tablet screen
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        //desctop screen
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+            display: inline;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 }

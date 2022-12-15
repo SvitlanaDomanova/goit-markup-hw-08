@@ -38,6 +38,8 @@
 }
 
 .social__network-item {
+    justify-items: center;
+    justify-content: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus .social__network-link {fill: #FFFFFF;
         border-radius: 50%;

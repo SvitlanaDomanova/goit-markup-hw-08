@@ -14,7 +14,7 @@
     //desctop screen
     @media screen and (min-width: 1200px) {
         font-size: 26px;
-    line-height: calc(31/26);
+        line-height: calc(31/26);
     }
 }
 .logo__img {
@@ -23,16 +23,20 @@
     align-items: center;
 }
 .header__logo {
+    margin-left: 0;
+    padding-left: 0;
     margin-right: 276px;
     display: flex;
-    align-items: center;
-    margin-left: 0;
         //tablet screen
         @media screen and (min-width: 768px) {
             margin-right: 87px;
+            margin-left: 0;
+            display: flex;
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
             margin-right: 92px;
+            margin-left: 0;
+           
         }
     }
