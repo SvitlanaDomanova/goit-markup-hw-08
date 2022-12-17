@@ -11,17 +11,17 @@ $breakpoints: (
     outline-offset: -2px;
     //phone screen
     @media screen and (min-width: 480px) {
-        width: 480px;
+    width: 480px;
     }
     //tablet screen
     @media screen and (min-width: 768px) {
-        width: 768px;
+    width: 768px;
         margin-left: auto;
         margin-right: auto;
     }
     //desctop screen
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+    width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -69,7 +69,18 @@ $breakpoints: (
     margin-bottom: 50px;
     gap: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+
+        }
+        //desctop screen
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        }
     
 }
 .prtfl_container {
@@ -91,6 +102,20 @@ $breakpoints: (
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+  
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 12px;
+    }
+    //desctop screen
+    @media screen and (min-width: 1200px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 .container_work {
     border-bottom: 1px;

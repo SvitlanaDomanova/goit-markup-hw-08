@@ -86,10 +86,9 @@
     display: none;
     //tablet screen
     @media screen and (min-width: 768px) {
-    display: flex;
+   display: flex;
     flex-wrap: wrap;
     margin-left: 96px;
- 
     gap: 10px;
    
     }
@@ -99,8 +98,8 @@
     flex-wrap: nowrap;
     align-items: center;
     margin-left: auto;
-    gap: 50px;
-    align-items: left;
+   gap: 50px;
+   align-items: left;
     }
 }
 
