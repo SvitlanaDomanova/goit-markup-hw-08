@@ -50,17 +50,18 @@
           aria-controls="mobile-menu"
         >
           <svg
+          class="menu-togle-svg"
             width="24"
             height="24"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
+            <path 
               fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"
-            ></path>
+              class="menu-togle-svg" ></path>
           </svg>
         </button>
                 </div>
@@ -164,15 +165,18 @@
             <li class="team__item">
                 <img 
                 srcset="
-                ./images/team/imgsm1@1x.jpg 450w,
-                ./images/team/sm1@2x.jpg 900w,
-                ./images/team/midle1.jpg 354w,
-                ./images/team/imgmidle1@2x.jpg 708w,
+                ./images/team/worker/900.jpg 900w,
+                ./images/team/worker/450.jpg 450w,
+                ./images/team/worker/midle1.jpg 354w,
+                ./images/team/worker/midle1@2x.jpg 708w,
                 ./images/team/big/img1@1x.jpg 270w,
-                ./images/team/big/img1@2x.jpg 540w 
+                ./images/team/big/img540.jpg 540w 
                 "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                src="./images/img_1.jpg" alt="Працівник" class="team__img" width="270" height="260">
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/img_1.jpg" alt="Працівник" class="team__img">
                 <div class="team__group">
                     <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p class="team__position">Product Designer</p>
@@ -229,7 +233,21 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/img_2.jpg" alt="Працівник" class="team__img"  width="270" height="260">
+                <img
+                srcset="
+                ./images/team/imgsmall_@2x.jpg 900w,
+                ./images/team/imgsmall_@1x.jpg 450w,
+                ./images/team/img354.jpg 354w,
+                ./images/team/img708_2.jpg 708w,
+                ./images/team/big/img2@1x.jpg 270w,
+                ./images/team/big/img2@2x.jpg 540w 
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/img_1.jpg" alt="Працівник" class="team__img">
+           
                 <div class="team__group">
                     <h3 class="team__name">Ольга Рєпіна</h3>
                     <p class="team__position">Frontend Developer</p>
@@ -286,7 +304,20 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/img_3.jpg" alt="Працівник" class="team__img"  width="270" height="260">
+                <img 
+                srcset="
+                ./images/team/imgsm3@2x.jpg 900w,
+                ./images/team/imgsm3@1x.jpg 450w,
+                ./images/team/imgmidle3@1x.jpg 354w,
+                ./images/team/imgmidle3@2x.jpg 708w,
+                ./images/team/big/img3@1x.jpg 270w,
+                ./images/team/big/img3@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/img_3.jpg" alt="Працівник" class="team__img"  width="270" height="260">
                     <div class="team__group">
                         <h3 class="team__name">Микола Тарасов</h3>
                         <p class="team__position">Marketing</p>
@@ -343,7 +374,20 @@
                     </div>
             </li>
             <li class="team__item">
-                <img src="./images/img_4.jpg" alt="Працівник"  class="team__img"  width="270" height="260">
+                <img 
+                srcset="
+                ./images/team/imgsm4@2x.jpg 900w,
+                ./images/team/imgsm4@1x.jpg 450w,
+                ./images/team/imgmidle4@1x.jpg 354w,
+                ./images/team/imgmidle4@2x.jpg708w,
+                ./images/team/big/img4@1x.jpg 270w,
+                ./images/team/big/img4@2x.jpg 540w 
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/img_4.jpg" alt="Працівник"  class="team__img"  width="270" height="260">
                 <div class="team__group">
                     <h3 class="team__name">Михайло Єрмаков</h3>
                     <p class="team__position">UI Designer</p>
@@ -536,7 +580,7 @@
                 <p class="footer__subscription-title">Підпишіться на розсилку</p>
                 <div class="footer__subscription-group">
                 <form  name="footer__subscription-form" autocomplete="on">
-                    <div>
+                    <div class="footer__subscription_action">
                         <label class="footer__subscription-label">
                             <input class="footer__subscription-mail" 
                             type="email" name="E-mail" 
@@ -552,6 +596,15 @@
                    </div>
                 </form>
             </div>
+            </div>
+            <div>
+                <button type="submit" class="footer__subscription-btn_mobileversion" data-modal-open>Підписатися
+                    <a class="footer__subscription-link">
+                                    <svg class="footer__subscription-icon" width="20" height="20">
+                                        <use href="./images/sssymbol-defs.svg#-iconicon-send"><use/>
+                                    </svg>
+                                </a> 
+                </button>
             </div>
         </div>
     </div> 
@@ -610,6 +663,7 @@
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
               <svg
+              class="menu-togle-svg"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -625,9 +679,9 @@
             </button>
       
             <ul class="mobile-menu">
-              <li><a href="./index.html" class="link list link__current">Студія</a></li>
-              <li><a href="./portfolio.html" class="link list">Портфоліо</a></li>
-              <li><a href="" class="link list">Контакти</a></li>
+              <li><a class="mobile__menu-current" href="./index.html">Студія</a></li>
+              <li><a class="mobile__menu-pages" href="./portfolio.html" class="link list">Портфоліо</a></li>
+              <li><a class="mobile__menu-pages" href="" class="link list">Контакти</a></li>
             </ul>
             <ul class="mobile__contacts">
                 <li class="mobile__contacts-item list"><a href="tel:+380961111111" class="mobile__contacts-phone">+38 096 111 11 11</a>
@@ -637,13 +691,16 @@
             </ul>
             <ul class="mobile-socials">
                 <li class="mobile__socials-item list">
-                    <a href="" class="mobile__social-link">Instagram</a>
+                   
+                    <div class="mobile__social-dash">
+                        <p class="mobile__social-dash-paragraf"><a href="" class="mobile__social-link">Instagram</a></p>
+                    </div>
                 </li>
                 <li class="mobile__socials-item list">
-                    <a href="" class="mobile__social-link">Twitter</a>
+                    <p class="mobile__social-dash-paragraf"><a href="" class="mobile__social-link">Twitter</a></p>
                 </li>
                 <li class="mobile__socials-item list">
-                    <a href="" class="mobile__social-link">Facebook</a>
+                    <p class="mobile__social-dash-paragraf"><a href="" class="mobile__social-link">Facebook</a></p>
                 </li>
                 <li class="mobile__socials-item list">
                     <a href="" class="mobile__social-link">LinkedIn</a>

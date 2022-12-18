@@ -104,10 +104,20 @@
 }
 
 .general__container-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     align-items: center;
+    //tablet screen
+    @media screen and (min-width: 768px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    //desctop screen
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 .header__container {
     display: flex;
