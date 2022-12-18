@@ -42,7 +42,7 @@
     text-transform: uppercase;
     color: var(--hero-catalogue);
     margin-right: auto;
-     margin-left: auto;
+    margin-left: 50px;
      //phone screen
      @media screen and (min-width: 480px) {
         margin-right: auto;
@@ -90,36 +90,41 @@
     align-items: center;
     padding-left: 0px;
 }
+
 .features__item--fon {
-    display: flex;
     max-width: 100%;
+    min-width: 290px;
+    display: flex;
     background-color: #F5F4FA;
-    background-size: cover;
+    background-size:100%;
     gap: 30px;
     margin-bottom: 30px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-         //tablet screen
+  
+         //phone screen
          @media screen and (min-width: 480px) {
             width: 450px;
             height: 120px;
+            padding-left: 0%;
+            padding-right: 0%;
+            gap: 30px;
         }
      //tablet screen
      @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
-   
-    }
-    //tablet screen
-    @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 120px;
-   
+        padding-left: 0%;
+        padding-right: 0%;
+        gap: 30px;
     }
     //desctop screen
     @media screen and (min-width: 1200px) {
         width: 270px;
         height: 120px;
+        padding-left: 0%;
+        padding-right: 0%;
+        gap: 30px;
     }
 }

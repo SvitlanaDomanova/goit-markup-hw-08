@@ -719,7 +719,7 @@ ul {
   text-transform: uppercase;
   color: var(--hero-catalogue);
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 50px;
 }
 @media screen and (min-width: 480px) {
   .features__name {
@@ -781,12 +781,13 @@ ul {
 }
 
 .features__item--fon {
+  max-width: 100%;
+  min-width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
   background-color: #F5F4FA;
-  background-size: cover;
+  background-size: 100%;
   gap: 30px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -801,24 +802,27 @@ ul {
   .features__item--fon {
     width: 450px;
     height: 120px;
+    padding-left: 0%;
+    padding-right: 0%;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .features__item--fon {
     width: 354px;
     height: 120px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features__item--fon {
-    width: 354px;
-    height: 120px;
+    padding-left: 0%;
+    padding-right: 0%;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item--fon {
     width: 270px;
     height: 120px;
+    padding-left: 0%;
+    padding-right: 0%;
+    gap: 30px;
   }
 }
 
