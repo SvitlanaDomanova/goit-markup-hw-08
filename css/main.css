@@ -52,9 +52,8 @@ ul {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid tomato;
-  outline-offset: -2px;
   margin: 0 auto;
+  max-width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -77,6 +76,7 @@ ul {
 }
 
 .features__container {
+  max-width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -106,8 +106,6 @@ ul {
 .footer_container {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 231px;
-  min-height: 81px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,7 +253,7 @@ ul {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .work__container {
     display: none;
   }
@@ -659,7 +657,12 @@ ul {
 }
 
 .features__item {
-  min-width: 270px;
+  max-width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .features__item {
+    min-width: 270px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -683,6 +686,7 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -714,6 +718,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-catalogue);
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 480px) {
   .features__name {
@@ -739,9 +745,29 @@ ul {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .features__description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__description {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__description {
+    margin-left: 0;
+  }
 }
 
 .features__img {
+  min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,18 +784,30 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 450px;
-  height: 120px;
+  max-width: 100%;
   background-color: #F5F4FA;
+  background-size: cover;
   gap: 30px;
   margin-bottom: 30px;
   border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .features__item--fon {
+    width: 450px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item--fon {
+    width: 354px;
+    height: 120px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item--fon {
@@ -886,8 +924,7 @@ ul {
 }
 
 .team__img {
-  width: 450px;
-  height: 460px;
+  max-width: 100%;
 }
 @media screen and (min-width: 479px) {
   .team__img {
@@ -1016,6 +1053,18 @@ ul {
   fill: #2196F3;
   border-color: #2196F3;
 }
+@media screen and (min-width: 320px) {
+  .customers__link {
+    margin-left: auto;
+    margin-bottom: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media screen and (min-width: 479px) {
   .customers__link {
     width: 208px;
@@ -1063,10 +1112,19 @@ ul {
 
 .footer__group-adress {
   padding-left: 0;
-  min-width: 231px;
-  margin-left: 109px;
-  margin-right: 109px;
+  min-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__group-adress {
+    padding-left: 0;
+    min-width: 231px;
+    margin-left: 109px;
+    margin-right: 109px;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__group-adress {
@@ -1082,6 +1140,9 @@ ul {
     margin-left: 0px;
     margin-right: 0px;
     text-align: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1192,8 +1253,20 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 148px;
-  margin-right: 148px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: center;
+  margin-right: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__group-logo {
+    margin-left: 148px;
+    margin-right: 148px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__group-logo {
@@ -1324,12 +1397,18 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
-  margin-left: 125px;
-  margin-right: 125px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__subscription-btn_mobileversion:hover, .footer__subscription-btn_mobileversion:focus {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  .footer__subscription-btn_mobileversion {
+    margin-left: 125px;
+    margin-right: 125px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__subscription-btn_mobileversion {
@@ -1429,7 +1508,7 @@ ul {
 }
 
 .footer__subscription-mail {
-  width: 450px;
+  min-width: 290px;
   height: 50px;
   margin-top: 20px;
   outline: unset;
@@ -1443,6 +1522,12 @@ ul {
   padding-left: 16px;
   padding-bottom: 15px;
   margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__subscription-mail {
+    width: 450px;
+    height: 50px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__subscription-mail {
@@ -1471,8 +1556,15 @@ ul {
   display: flex;
   margin-bottom: 20px;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__socials__network-title {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__socials__network-title {
@@ -1550,11 +1642,21 @@ ul {
 }
 
 .footer__socials__network {
-  margin-left: 122px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0px;
-  margin-right: 122px;
   margin-bottom: 60px;
   margin-top: 60px;
+}
+@media screen and (min-width: 480px) {
+  .footer__socials__network {
+    margin-left: 122px;
+    margin-right: 122px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__socials__network {
@@ -1847,7 +1949,7 @@ ul {
   left: 50%;
   -webkit-transform: translateX(-70%);
           transform: translateX(-70%);
-  width: 450px;
+  min-width: 450px;
   min-height: 609px;
   background-color: var(--main-title-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1867,6 +1969,11 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -2469,8 +2576,8 @@ ul {
   padding: 32px;
   background-color: #fff;
   z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -2741,8 +2848,13 @@ ul {
 }
 
 .prtfl_img {
-  width: 448px;
-  height: 294px;
+  max-width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .prtfl_img {
+    width: 448px;
+    height: 294px;
+  }
 }
 @media screen and (min-width: 768px) {
   .prtfl_img {

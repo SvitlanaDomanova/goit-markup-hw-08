@@ -7,9 +7,8 @@ $breakpoints: (
 .container {
     padding-right: 15px;
     padding-left: 15px;
-    outline: 2px solid tomato;
-    outline-offset: -2px;
     margin: 0 auto;
+max-width: 100%;
     //phone screen
     @media screen and (min-width: 480px) {
     width: 480px;
@@ -28,6 +27,7 @@ $breakpoints: (
     }
 }
 .features__container {
+    max-width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
     //tablet screen
@@ -52,8 +52,6 @@ $breakpoints: (
 .footer_container {
     padding-top: 60px;
     padding-bottom: 60px;
-    min-width: 231px;
-    min-height: 81px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -149,9 +147,8 @@ $breakpoints: (
     padding-bottom: 94px;
 }
 .work__container {
-       
         //phone screen
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             display: none;
         }
         //tablet screen
@@ -160,7 +157,6 @@ $breakpoints: (
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
-         
             padding-bottom: 94px;
             display: flex;
             width: 1200px;

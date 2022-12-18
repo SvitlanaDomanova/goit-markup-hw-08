@@ -22,10 +22,17 @@
 }
 .footer__group-adress {
     padding-left: 0;
+    min-width: 50%;
+    margin-left:  auto;
+    margin-right: auto;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+    padding-left: 0;
     min-width: 231px;
     margin-left: 109px;
     margin-right: 109px;
     text-align: center;
+    }
     @media screen and (min-width: 768px) {
         margin-left: 61px;
         margin-right: 165px;
@@ -38,6 +45,7 @@
             margin-left: 0px;
             margin-right: 0px;
             text-align: start;
+            justify-content: flex-start;
         }
 }
 
@@ -68,6 +76,7 @@
   
 }
 .footer__mail-link {
+    
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -127,8 +136,13 @@
     padding-left: 0;
     margin-bottom: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: center;
+    margin-right: center;
+    @media screen and (min-width: 480px) {
     margin-left: 148px;
-    margin-right: 148px;
+    margin-right: 148px;}
     @media screen and (min-width: 768px) {
         margin-left: 100px;
         margin-right: 204px;
@@ -227,11 +241,15 @@
             align-items: center;
             justify-content: center;
             margin-top: 20px;
-            margin-left: 125px;
-            margin-right: 125px;
+            margin-left: auto;
+            margin-right: auto;
            &:hover, 
            &:focus {
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+            @media screen and (min-width: 768px) { 
+                margin-left: 125px;
+                margin-right: 125px;
             }
     @media screen and (min-width: 768px) {
         margin-left: 269px;
@@ -296,7 +314,7 @@
     margin-right: 0;
 }
 .footer__subscription-mail {
-    width: 450px;
+    min-width: 290px;
     height: 50px;
     margin-top: 20px;
     outline: unset;
@@ -309,6 +327,10 @@
     padding-left: 16px;
     padding-bottom: 15px;
     margin-left: 0;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        height: 50px;
+    }
     @media screen and (min-width: 768px) {
         width: 450px;
         height: 50px;
@@ -331,8 +353,10 @@
     display: flex;
     margin-bottom: 20px;
     text-align: center;
+    justify-content: center;
+    @media screen and (min-width: 480px) {
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 40px; }
     @media screen and (min-width: 768px) {
         text-align: center;
         padding-left: 40px;
@@ -377,11 +401,15 @@
         }
 }
 .footer__socials__network {
-    margin-left: 122px;
+    align-items: center;
+    justify-content: center;
     margin-top: 0px;
-    margin-right: 122px;
     margin-bottom: 60px;
     margin-top: 60px;
+    @media screen and (min-width: 480px) {
+        margin-left: 122px;
+        margin-right: 122px;
+        }
     @media screen and (min-width: 768px) {
         margin-bottom: 60px;
         margin-right: 0px;

@@ -1,5 +1,9 @@
 .features__item {
-    min-width: 270px;
+    max-width: 100%;
+    //tablet screen
+    @media screen and (min-width: 480px) {
+        min-width: 270px;
+    }
      //tablet screen
      @media screen and (min-width: 768px) {
         width: 354px;
@@ -16,6 +20,7 @@
     padding-left: 0;
     display: flex; 
     flex-wrap: wrap;
+    min-width: 100%;
     //tablet screen
     @media screen and (min-width: 768px) {
         justify-content: space-between;
@@ -36,6 +41,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hero-catalogue);
+    margin-right: auto;
+     margin-left: auto;
      //phone screen
      @media screen and (min-width: 480px) {
         margin-right: auto;
@@ -59,8 +66,25 @@
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
+    margin-right: auto;
+    margin-left: auto;
+        //phone screen
+        @media screen and (min-width: 480px) {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        //tablet screen
+        @media screen and (min-width: 768px) {
+            margin-right: auto;
+            margin-left: 0;
+        }
+        //desctop screen
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
 }
 .features__img {
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,14 +92,25 @@
 }
 .features__item--fon {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 120px;
+    max-width: 100%;
     background-color: #F5F4FA;
+    background-size: cover;
     gap: 30px;
     margin-bottom: 30px;
     border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+         //tablet screen
+         @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 120px;
+        }
+     //tablet screen
+     @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+   
+    }
     //tablet screen
     @media screen and (min-width: 768px) {
         width: 354px;
