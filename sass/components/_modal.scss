@@ -30,7 +30,9 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) linear;
     justify-content: center;
     @media screen and (min-width: 768px) {
-     
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%); 
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
@@ -70,8 +72,6 @@
 .modal-form {
     margin-left: 40px;
     margin-right: 40px;
-
-
 }
 .modal-label {
     display: block;
@@ -226,10 +226,21 @@
     margin-bottom: 28px;
 }
 .modal-form-agreement-desc {
-    font-size: 14px;
-    line-height: calc(24/14);
+    font-size: 12px;
+    line-height: calc(14/12);
     letter-spacing: 0.03em;
     color: #757575; 
+     //tablet screen
+     @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: calc(14/12);
+    }
+    //desctop screen
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24/14);
+       
+    }
 }
 .modal-form-agreement-link {
     color: var(--button-color);

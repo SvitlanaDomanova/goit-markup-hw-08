@@ -1,11 +1,24 @@
 .team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
+    font-size: 28px;
+    line-height: calc(33/28);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--hero-catalogue);
+     //tablet screen
+     @media screen and (min-width: 768px) {
+        font-size: 28px;
+        line-height: calc(33/28);
+        margin-bottom: 30px;
+    }
+    //desctop screen
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    }
 }
 .work__title {
     margin-bottom: 50px;

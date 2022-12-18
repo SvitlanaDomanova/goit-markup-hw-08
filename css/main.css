@@ -54,6 +54,7 @@ ul {
   padding-left: 15px;
   outline: 2px solid tomato;
   outline-offset: -2px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -254,10 +255,6 @@ ul {
   padding-bottom: 94px;
 }
 
-.work__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 @media screen and (min-width: 480px) {
   .work__container {
     display: none;
@@ -270,9 +267,10 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .work__container {
-    padding-top: 94px;
     padding-bottom: 94px;
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -792,13 +790,28 @@ ul {
 }
 
 .customers__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--hero-catalogue);
+}
+@media screen and (min-width: 768px) {
+  .customers__title {
+    font-size: 28px;
+    line-height: 1.1785714286;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .team__name {
@@ -931,6 +944,15 @@ ul {
   gap: 30px;
   margin-left: 0;
   padding-left: 0;
+}
+@media screen and (min-width: 320px) {
+  .customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 479px) {
   .customers__list {
@@ -1846,6 +1868,14 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     top: 50%;
@@ -2106,10 +2136,22 @@ ul {
 }
 
 .modal-form-agreement-desc {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .modal-form-agreement-desc {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal-form-agreement-link {
@@ -2320,13 +2362,28 @@ ul {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--hero-catalogue);
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.1785714286;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .work__title {

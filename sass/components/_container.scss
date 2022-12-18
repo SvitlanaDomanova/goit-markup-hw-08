@@ -9,6 +9,7 @@ $breakpoints: (
     padding-left: 15px;
     outline: 2px solid tomato;
     outline-offset: -2px;
+    margin: 0 auto;
     //phone screen
     @media screen and (min-width: 480px) {
     width: 480px;
@@ -148,8 +149,7 @@ $breakpoints: (
     padding-bottom: 94px;
 }
 .work__container {
-        padding-top: 94px;
-        padding-bottom: 94px;
+       
         //phone screen
         @media screen and (min-width: 480px) {
             display: none;
@@ -160,11 +160,12 @@ $breakpoints: (
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
-            padding-top: 94px;
+         
             padding-bottom: 94px;
-            display: inline;
+            display: flex;
             width: 1200px;
             margin-left: auto;
             margin-right: auto;
+           
         }
 }
