@@ -42,7 +42,7 @@
     text-transform: uppercase;
     color: var(--hero-catalogue);
     margin-right: auto;
-    margin-left: 50px;
+    margin-left: auto;
      //phone screen
      @media screen and (min-width: 480px) {
         margin-right: auto;
@@ -61,6 +61,7 @@
 }
 
 .features__description {
+    max-width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
