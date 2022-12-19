@@ -97,12 +97,16 @@
   .mobile-socials {
     display: flex;
     gap: 20px;
+    padding-left: 0;
 
   }
   .mobile__social-link {
     text-decoration: none;
     color: #2196F3;
   }
+.mobile__contacts {
+  padding-left: 0;
+}
   .mobile__contacts-phone {
     text-decoration: none;
     font-weight: 500;
@@ -111,6 +115,8 @@
     letter-spacing: 0.02em;
     margin-bottom: 32px;
     color:  #2196F3;
+    padding-left: 0;
+    
   }
   .mobile__contacts-mail {
     text-decoration: none;
@@ -120,11 +126,11 @@
     letter-spacing: 0.02em;
     color: #757575;
     margin-bottom: 64px;
+    padding-left: 0;
   }
   .mobile__social-dash{
     display: flex;
-}
-
+  }
 .mobile__social-dash-paragraf::after{
     content: '|';
     width: 22px;

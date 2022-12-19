@@ -2686,11 +2686,16 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  padding-left: 0;
 }
 
 .mobile__social-link {
   text-decoration: none;
   color: #2196F3;
+}
+
+.mobile__contacts {
+  padding-left: 0;
 }
 
 .mobile__contacts-phone {
@@ -2701,6 +2706,7 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 32px;
   color: #2196F3;
+  padding-left: 0;
 }
 
 .mobile__contacts-mail {
@@ -2711,6 +2717,7 @@ ul {
   letter-spacing: 0.02em;
   color: #757575;
   margin-bottom: 64px;
+  padding-left: 0;
 }
 
 .mobile__social-dash {
