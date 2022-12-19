@@ -23,10 +23,16 @@
     align-items: center;
 }
 .header__logo {
+    justify-content: space-between;
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    //phone screen
+    @media screen and (min-width: 480px) {
     margin-left: 0;
     padding-left: 0;
     margin-right: 276px;
-    display: flex;
+    }
         //tablet screen
         @media screen and (min-width: 768px) {
             margin-right: 87px;

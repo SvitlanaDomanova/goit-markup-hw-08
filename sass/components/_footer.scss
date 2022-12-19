@@ -20,12 +20,17 @@
     margin-bottom: 9px;
     display: inline-block;
 }
+.footer__adress_contact {
+    display: inline-block;
+}
 .footer__group-adress {
+
     padding-left: 0;
-    min-width: 50%;
     margin-left:  auto;
     margin-right: auto;
     text-align: center;
+    justify-content: center;
+    width: 231px;
     @media screen and (min-width: 480px) {
     padding-left: 0;
     min-width: 231px;
@@ -34,14 +39,16 @@
     text-align: center;
     }
     @media screen and (min-width: 768px) {
+        padding-left: 0;
         margin-left: 61px;
         margin-right: 165px;
         text-align: center;
+        width: 231px;
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
             padding-left: 0;
-            min-width: 231px;
+            width: 231px;
             margin-left: 0px;
             margin-right: 0px;
             text-align: start;
@@ -112,19 +119,25 @@
     letter-spacing: 0.03em;
     color: var(--footer-color);
     text-decoration: none;
+    list-style: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0ms;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 55px;
+
+   
     &:hover, 
     &:focus {
         color: var(--button-color);
     }
+    @media screen and (min-width: 480px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     @media screen and (min-width: 768px) {
-        padding-left: 55px;
-        padding-right: 55px;
+        padding-left: 52px;
+        padding-right: 52px;
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
@@ -155,6 +168,8 @@
             padding-left: 0;
             margin-bottom: 20px;
             display: flex;
+            align-items: start;
+            justify-content: start;
         }
 }
 .footer__socials__network-group {
@@ -368,6 +383,10 @@
         //desctop screen
         @media screen and (min-width: 1200px) {
        text-align: start;
+       margin-left: 0;
+       padding-left: 0px;
+       padding-right: 0px;
+       justify-content: flex-start;
         }
 }
 .label-email {
@@ -422,6 +441,8 @@
             margin-top: 0px;
             margin-right: 0px;
             margin-bottom: 0px;
+            justify-content: start;
+            align-items: flex-start;
         }
 }
 .footer__socials__network-icon {
